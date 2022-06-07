@@ -6,16 +6,27 @@
   font-family: sans-serif;
 }
 
-header {
+.ctr {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.2rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 1.2rem 0;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -23,16 +34,6 @@ header {
   background-color: white;
   -webkit-box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-header div.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 1rem;
 }
 
 header nav ul {
@@ -51,7 +52,11 @@ header nav ul li {
   font-size: 0.6rem;
 }
 
-header button {
+header span {
+  color: gray;
+}
+
+header div.hdr_segment button {
   background: none;
   color: inherit;
   border: none;
@@ -61,20 +66,24 @@ header button {
   outline: inherit;
 }
 
-header button .circle {
+header div.hdr_segment button svg {
+  fill: gray;
+}
+
+header div.hdr_segment button .circle {
   width: 1.2rem;
 }
 
-header button .caret-down {
+header div.hdr_segment button .caret-down {
   width: 0.5rem;
   margin-right: 1rem;
 }
 
-header button .userLogin {
+header div.hdr_segment button .userLogin {
   width: 1rem;
 }
 
-header button .signUp {
+header div.hdr_segment button .signUp {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -82,7 +91,7 @@ header button .signUp {
 
 main section.backImage {
   position: relative;
-  min-height: 90vh;
+  min-height: 95vh;
   width: 100%;
   background-image: url("../Pictures/backgroundimg.jpeg");
   background-size: cover;
@@ -91,9 +100,6 @@ main section.backImage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -101,7 +107,7 @@ main section.backImage {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+  padding: 20vh;
 }
 
 main section.backImage h1 {
@@ -111,14 +117,21 @@ main section.backImage h1 {
 }
 
 main section.backImage div.search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 90%;
 }
 
 main section.backImage div.search-container .input_destination {
-  width: 80%;
+  width: 30%;
 }
 
 main section.backImage div.search-container .input_destination input {
+  width: 100%;
   font-size: 16px;
   padding: 1rem 0.5rem;
   border: none;
@@ -153,11 +166,6 @@ main section.second section.cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
-}
-
-main section.second section.cards div.card {
-  padding: 1rem;
 }
 
 main section.second section.cards div.card h4 {
@@ -181,45 +189,43 @@ main section.second button {
   font-size: 1.2rem;
 }
 
-main section.third {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+main section.third h3 {
+  padding: 1rem 0;
 }
 
-main section.third h3 {
-  font-size: 1rem;
-  font-weight: bolder;
+main section.third .gridcontainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section.third .gridcontainer a {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #5c5a5a;
   text-align: left;
 }
 
-main section.third .panel_grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-}
-
-main section.third .panel_grid a {
-  margin: 1rem;
-  text-decoration: none;
-  color: #5c5a5a;
-  font-weight: bold;
-}
-
-main section.third .panel_grid a:hover span {
+main section.third .gridcontainer a:hover span {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), color-stop(40%, rgba(255, 255, 255, 0)), color-stop(90%, #fff176), color-stop(95%, transparent));
   background: linear-gradient(transparent 40%, rgba(255, 255, 255, 0) 40%, #fff176 90%, transparent 95%);
 }
 
-main section.third button {
+main section.third div.seeMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.third div.seeMore button {
   border: none;
   margin: 1.5rem;
   padding: 0.5rem 5rem;
@@ -230,64 +236,49 @@ main section.third button {
   font-size: 1.2rem;
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: white;
-}
-
-footer div.grid {
+footer div.footer {
   background-color: #02a6dd;
+}
+
+footer div.footer div.grid {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-footer div.grid div.grid_column_left .footer_cnt {
-  margin: 1rem;
-  padding: 2rem;
+footer div.footer div.grid div.grid_column_left {
+  margin: auto;
+  width: 55%;
 }
 
-footer div.grid div.grid_column_left .footer_cnt h2 {
+footer div.footer div.grid div.grid_column_left .footer_cnt h2 {
   font-size: 1rem;
+  color: white;
+  padding: 1rem 0;
 }
 
-footer div.grid div.grid_column_left nav {
+footer div.footer div.grid div.grid_column_left nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-footer div.grid div.grid_column_left nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  list-style-type: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-footer div.grid div.grid_column_left nav ul li a {
+footer div.footer div.grid div.grid_column_left nav ul {
+  list-style-type: none;
+}
+
+footer div.footer div.grid div.grid_column_left nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 0.5rem;
-  padding: 0.5rem 0;
 }
 
-footer div.grid div.grid_column_right {
+footer div.footer div.grid div.grid_column_right {
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,47 +293,60 @@ footer div.grid div.grid_column_right {
   padding: 2rem;
 }
 
-footer div.grid div.grid_column_right a {
+footer div.footer div.grid div.grid_column_right a {
   color: white;
   text-decoration: none;
 }
 
-footer div.grid div.grid_column_right h2 {
+footer div.footer div.grid div.grid_column_right h2 {
   font-size: 2rem;
   padding: 0.5rem;
 }
 
-footer div.grid div.grid_column_right p {
+footer div.footer div.grid div.grid_column_right p {
   color: #ddd8d8;
   font-size: 0.8rem;
   padding: 0.5rem;
 }
 
-footer div.grid div.grid_column_right tag {
+footer div.footer div.grid div.grid_column_right tag {
   padding: 0.5rem;
   font-size: 1rem;
   font-weight: bold;
 }
 
-footer div.grid div.grid_column_right div.socialIcon {
+footer div.footer div.grid div.grid_column_right div.socialIcon {
   padding: 0.5rem;
 }
 
-footer .sub_footer {
+footer div.sub_footer {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #02a6dd;
+}
+
+footer div.sub_footer div.ctr_ft {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #02a6dd;
-  border-top: 0.1px solid #ddd;
-  padding: 1rem 2rem;
+  width: 100%;
+  font-size: 0.5rem;
+  color: white;
 }
 
-footer .sub_footer div.footer_left span {
-  padding: 0 1rem;
+footer div.sub_footer div.ctr_ft div.footer_left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-footer .sub_footer div.footer_right span {
-  text-align: right;
+footer div.sub_footer div.ctr_ft div.footer_right {
+  width: 50%;
+  text-align: end;
 }
 
 /* Dropdown Button */
