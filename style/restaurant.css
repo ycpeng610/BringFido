@@ -21,12 +21,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem;
 }
 
 header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 1rem 0;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -46,7 +46,7 @@ header nav ul {
 }
 
 header nav ul li {
-  color: #5d5858;
+  color: #444444;
   text-transform: uppercase;
   margin: 0 1rem;
   font-size: 0.6rem;
@@ -89,134 +89,98 @@ header div.hdr_segment button .signUp {
           align-items: center;
 }
 
-main section.backImage {
-  position: relative;
-  min-height: 95vh;
+header div.sub_header {
+  padding-bottom: 1rem;
+  background-color: #f7f6f6;
+}
+
+header div.sub_header div.search_ctr {
   width: 100%;
-  background-image: url("../Pictures/backgroundimg.jpeg");
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 20vh;
 }
 
-main section.backImage h1 {
-  font-size: 3.5rem;
-  color: white;
-  margin: 2rem 0rem;
-}
-
-main section.backImage div.search-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+header div.sub_header div.search_ctr .input_destination input {
   width: 90%;
-}
-
-main section.backImage div.search-container .input_destination {
-  width: 30%;
-}
-
-main section.backImage div.search-container .input_destination input {
-  width: 100%;
   font-size: 16px;
-  padding: 1rem 0.5rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 2px;
+  border: 1px solid #d4d3d3;
+}
+
+header div.sub_header div.search_ctr button {
   border: none;
-}
-
-main section.backImage div.search-container button {
-  font-size: 16px;
-  padding: 1rem 0.5rem;
-  border: none;
-}
-
-main section.second {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-main section.second h2 {
-  font-size: 2.5rem;
-  margin: 3rem 0rem;
-}
-
-main section.second section.cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-main section.second section.cards div.card h4 {
-  font-size: 1rem;
-  font-weight: bolder;
-  padding: 1rem 0;
-}
-
-main section.second section.cards div.card p {
-  font-size: 0.8rem;
-}
-
-main section.second button {
-  border: none;
-  margin: 1.5rem;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 0.5rem;
   background-color: #02b1e8;
   color: white;
   border-radius: 2px;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 16px;
 }
 
-main section.third h3 {
-  padding: 1rem 0;
+header div.sub_header div.search_filter {
+  color: #444444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-main section.third .gridcontainer {
+header div.sub_header div.search_filter button {
+  color: #444444;
+}
+
+header div.sub_header div.search_filter .p2 {
+  margin-right: 2rem;
+}
+
+main div.main_container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main div.main_container div.content_left {
+  width: 65%;
+}
+
+main div.main_container div.content_left div.content h1 {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+main div.main_container div.content_left div.content p {
+  margin: 1.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+  color: #444444;
+}
+
+main div.main_container div.content_left div.gridcontainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[3];
-      grid-template-columns: repeat(3, auto);
-  text-align: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 2rem;
 }
 
-main section.third .gridcontainer a {
-  padding: 0.5rem 0;
+main div.main_container div.content_left div.gridcontainer img {
+  width: 100%;
+}
+
+main div.main_container div.content_left div.gridcontainer a {
   text-decoration: none;
-  color: #5c5a5a;
-  text-align: left;
+  color: #444444;
 }
 
-main section.third .gridcontainer a:hover span {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), color-stop(40%, rgba(255, 255, 255, 0)), color-stop(90%, #fff176), color-stop(95%, transparent));
-  background: linear-gradient(transparent 40%, rgba(255, 255, 255, 0) 40%, #fff176 90%, transparent 95%);
+main div.main_container div.content_left div.gridcontainer h2 {
+  color: #444444;
 }
 
-main section.third div.seeMore {
+main div.main_container div.content_left div.seeMore {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +189,7 @@ main section.third div.seeMore {
           justify-content: center;
 }
 
-main section.third div.seeMore button {
+main div.main_container div.content_left div.seeMore button {
   border: none;
   margin: 1.5rem;
   padding: 0.5rem 5rem;
@@ -234,6 +198,67 @@ main section.third div.seeMore button {
   border-radius: 2px;
   text-decoration: none;
   font-size: 1.2rem;
+}
+
+main div.main_container div.content_right {
+  padding: 2rem;
+  width: 35%;
+}
+
+main div.main_container div.content_right section.map_area {
+  margin-top: 2rem;
+  border: 1px solid #d4d3d3;
+  border-radius: 2px;
+  padding: 1rem;
+}
+
+main div.main_container div.content_right section.map_area h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+main div.main_container div.content_right section.map_area nav ul li {
+  list-style-type: none;
+}
+
+main div.main_container div.content_right section.map_area nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+main div.main_container div.content_right section.blog_area {
+  margin-top: 2rem;
+  border: 1px solid #d4d3d3;
+  border-radius: 2px;
+  padding: 2rem;
+}
+
+main div.main_container div.content_right section.blog_area h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+main div.main_container div.content_right section.blog_area div.blogs img {
+  width: 100%;
+}
+
+main div.main_container div.content_right section.blog_area div.blogs div.articleTitle_title {
+  padding-bottom: 1rem;
+}
+
+main div.main_container div.content_right section.blog_area div.blogs a {
+  text-decoration: none;
+  color: #5c5a5a;
+  text-align: left;
+}
+
+main div.main_container div.content_right section.blog_area div.blogs a:hover span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), color-stop(40%, rgba(255, 255, 255, 0)), color-stop(90%, #fff176), color-stop(95%, transparent));
+  background: linear-gradient(transparent 40%, rgba(255, 255, 255, 0) 40%, #fff176 90%, transparent 95%);
 }
 
 footer div.footer {
@@ -351,9 +376,8 @@ footer div.sub_footer div.ctr_ft div.footer_right {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: white;
+  background-color: #f7f6f6;
   color: black;
-  padding: 1rem 0.5rem;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -362,7 +386,7 @@ footer div.sub_footer div.ctr_ft div.footer_right {
 /* Dropdown button on hover & focus */
 .dropbtn:hover,
 .dropbtn:focus {
-  background-color: white;
+  background-color: #f7f6f6;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -399,4 +423,4 @@ footer div.sub_footer div.ctr_ft div.footer_right {
 .show {
   display: block;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=restaurant.css.map */

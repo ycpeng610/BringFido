@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/restaurant.css" />
   </head>
   <body>
     <header>
@@ -101,135 +101,195 @@
           </span>
         </div>
       </div>
-    </header>
-    <main>
-      <!--image part of the first page-->
-      <section class="backImage">
-        <h1>Where do you want to bring Fido?</h1>
-        <div class="search-container">
-          <!-- <form> -->
-          <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div class="sub_header">
+        <div class="search_ctr ctr">
+          <span class="input_destination">
+            <input type="text" placeholder="Search.." name="search" />
+          </span>
+          <button type="submit">Submit</button>
+        </div>
+        <div class="search_filter ctr">
+          <div class="dropdown p2">
+            <button onclick="myFunction()" class="dropbtn">
+              All Restaurants
+            </button>
             <div id="myDropdown" class="dropdown-content">
               <a href="#">Link 1</a>
               <a href="#">Link 2</a>
               <a href="#">Link 3</a>
             </div>
           </div>
-          <span class="input_destination">
-            <input type="text" placeholder="Search.." name="search" />
-          </span>
-          <button type="submit">Submit</button>
-          <!-- </form> -->
+          <div class="rating p2">Rating</div>
+          <div class="src">Search Within Resaults</div>
         </div>
-      </section>
-      <!-- 3 little pics -->
-      <section class="second ctr">
-        <h2>
-          Explore over 500,000 places to stay, play, and <br />
-          eat with your dog.
-        </h2>
+      </div>
+    </header>
+    <main>
+      <div class="ctr main_container">
+        <div class="content_left">
+          <div class="content">
+            <h1>Top Dog Friendly Restaurants Worldwide</h1>
+            <p>
+              Don’t leave Fido in the hotel room when it’s time for dinner. A
+              dog’s gotta eat too! And no matter where you’re headed, we can
+              point you towards a great sidewalk cafe, brew pub, coffee shop, or
+              other eatery that will welcome Fido to join you at an outdoor
+              table. Bone appetit!
+            </p>
+          </div>
+          <div class="gridcontainer">
+            <!-- pic1 -->
+            <div class="propertyTitle">
+              <!-- a>img -->
+              <a href="#">
+                <img
+                  src="https://photos.bringfido.com/restaurants/15681/15681_772.jpg?size=tile&density=2x"
+                />
+              </a>
+              <div class="propertyTitle_info">
+                <h2 class="propertyTitle_name">Lazy Dog Restaurant & Bar</h2>
+                <div class="propertyTitle_locationRow">
+                  <a href="" class="propertyTitle_location">
+                    Hilton Head Island, SC
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- pic2 -->
+            <div class="propertyTitle">
+              <!-- a>img -->
+              <a href="#">
+                <img
+                  src="https://photos.bringfido.com/restaurants/590/590_344.jpg?size=tile&density=2x"
+                />
+              </a>
+              <div class="propertyTitle_info">
+                <h2 class="propertyTitle_name">J. Christopher's</h2>
+                <div class="propertyTitle_locationRow">
+                  <a href="" class="propertyTitle_location"> Savannah, GA </a>
+                </div>
+              </div>
+            </div>
 
-        <section class="cards">
-          <div class="card">
-            <div class="image-container">
-              <img src="./Pictures/perk1.webp" alt="" />
-              <h4>Dog Owner Reviews</h4>
-              <p>
-                Read thousands of reviews to sniff out the best pet friendly
-                hotels, restaurants, and attractions in all 50 states and more
-                than 100 countries.
-              </p>
+            <!-- pic3 -->
+            <div class="propertyTitle">
+              <!-- a>img -->
+              <a href="#">
+                <img
+                  src="https://photos.bringfido.com/restaurants/0/7/4/19470/19470_54197.jpg?size=tile&density=2x"
+                />
+              </a>
+              <div class="propertyTitle_info">
+                <h2 class="propertyTitle_name">Mother Road Brewing Company</h2>
+                <div class="propertyTitle_locationRow">
+                  <a href="" class="propertyTitle_location"> Flagstaff, AZ </a>
+                </div>
+              </div>
+            </div>
+            <!-- pic4 -->
+            <div class="propertyTitle">
+              <!-- a>img -->
+              <a href="#">
+                <img
+                  src="https://photos.bringfido.com/restaurants/10516/20160616_1182_10516.jpg?size=tile&density=2x"
+                />
+              </a>
+              <div class="propertyTitle_info">
+                <h2 class="propertyTitle_name">Fox & Parrot Tavern</h2>
+                <div class="propertyTitle_locationRow">
+                  <a href="" class="propertyTitle_location"> Gatlinburg, TN </a>
+                </div>
+              </div>
+            </div>
+            <!-- pic5 -->
+            <div class="propertyTitle">
+              <!-- a>img -->
+              <a href="#">
+                <img
+                  src="https://photos.bringfido.com/photo/2015/08/24/DSC02037.jpg?size=tile&density=2x"
+                />
+              </a>
+              <div class="propertyTitle_info">
+                <h2 class="propertyTitle_name">Moon River Brewing Company</h2>
+                <div class="propertyTitle_locationRow">
+                  <a href="" class="propertyTitle_location"> Savannah, GA </a>
+                </div>
+              </div>
+            </div>
+            <!-- pic6 -->
+            <div class="propertyTitle">
+              <!-- a>img -->
+              <a href="#">
+                <img
+                  src="https://photos.bringfido.com/restaurants/7/4/2/247/247_271473.jpg?size=tile&density=1x"
+                />
+              </a>
+              <div class="propertyTitle_info">
+                <h2 class="propertyTitle_name">Monks House of Ale Repute</h2>
+                <div class="propertyTitle_locationRow">
+                  <a href="" class="propertyTitle_location">Sioux Falls, SD </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="image-container">
-              <img src="./Pictures/perk2.webp" alt="" />
-              <h4>Canine Concierge</h4>
-              <p>
-                When you make a hotel reservation, our Canine Concierge ensures
-                you’re assigned to a pet-friendly room, so there are no
-                surprises at check-in.
-              </p>
-            </div>
+          <div class="seeMore">
+            <button type="submit">See More Posts</button>
           </div>
-          <div class="card">
-            <div class="image-container">
-              <img src="./Pictures/perk3.webp" alt="" />
-              <h4>No Booking Fees</h4>
-              <p>
-                Enjoy a low rate on a pet friendly hotel every time! There is no
-                booking fee and reservations are always backed by our Pet
-                Friendly Guarantee.
-              </p>
-            </div>
-          </div>
-        </section>
-        <button type="submit">Browser Pet-Friendly Hotels</button>
-      </section>
+        </div>
+        <div class="content_right">
+          <section class="map_area">
+            <button class="mapLink"></button>
+            <nav class="quickLink">
+              <h2>Worldwide quick links</h2>
+              <ul>
+                <li>
+                  <a href="">Hotels</a>
+                </li>
+                <li><a href="">Restaurants</a></li>
+                <li><a href="">Activities</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Photos</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section class="blog_area">
+            <h2>Pet Travel blog</h2>
+            <div class="blogs">
+              <a href="">
+                <img
+                  src="https://photos.bringfido.com/photo/2021/12/23/DealoftheWeek-Thumb.jpg?size=tile&density=2x"
+                  alt=""
+                />
+                <div class="articleTitle_title">
+                  <span>BringFido's Deal of the Week</span>
+                </div>
+              </a>
 
-      <section class="third ctr">
-        <h3>LATEST FROM THE BLOG</h3>
-        <div class="gridcontainer">
-          <a href="#">
-            <img
-              src="https://photos.bringfido.com/photo/2022/05/25/Hotel_Indigo_Hero_zCLCpXG.jpg?size=tile&amp;density=1x"
-              alt=""
-            />
-            <div class="articleTitle_title">
-              <span>Can I Bring My Dog to Hotel Indigo?</span>
+              <a href="">
+                <img
+                  src="https://photos.bringfido.com/photo/2022/05/31/dog_dad_gifts_thumb.jpg?size=tile&density=2x"
+                  alt=""
+                />
+                <div class="articleTitle_title">
+                  <span>Gifts for Every Dog Dad</span>
+                </div>
+              </a>
+
+              <a href="">
+                <img
+                  src="https://photos.bringfido.com/photo/2022/05/30/Best_Dog_Park_in_Every_State_Thumb.jpeg?size=tile&density=2x"
+                  alt=""
+                />
+                <div class="articleTitle_title">
+                  <span>Best Dog Park in Every State</span>
+                </div>
+              </a>
             </div>
-          </a>
-          <a href="#">
-            <img
-              src="https://photos.bringfido.com/photo/2020/06/22/always_sunny_with_olive_94358748_2294943120807528_3676881248808111175_n.jpg?size=tile&density=1x"
-              alt=""
-            />
-            <div class="articleTitle_title">
-              <span>Best Dog Beaches on Lakes and Rivers</span>
-            </div>
-          </a>
-          <a href="#">
-            <img
-              src="https://photos.bringfido.com/photo/2019/07/02/10747_20683_4NNG5sg.jpg?size=tile&density=1x"
-              alt=""
-            />
-            <div class="articleTitle_title">
-              <span>Best Gulf Coast Dog Beaches</span>
-            </div>
-          </a>
-          <a href="#">
-            <img
-              src="https://photos.bringfido.com/photo/2019/05/01/IMG_2148.JPG?size=tile&density=1x"
-              alt=""
-            />
-            <div class="articleTitle_title">
-              <span>Best East Coast Dog Beaches</span>
-            </div>
-          </a>
-          <a href="#">
-            <img
-              src="https://photos.bringfido.com/photo/2019/04/30/56262994_663339087471947_2430361196246870857_n.jpg?size=tile&density=1x"
-              alt=""
-            />
-            <div class="articleTitle_title">
-              <span>Best West Coast Dog Beaches</span>
-            </div>
-          </a>
-          <a href="#">
-            <img
-              src="https://photos.bringfido.com/photo/2022/05/19/uniqueairbnbthumb.jpeg?size=tile&density=1x"
-              alt=""
-            />
-            <div class="articleTitle_title">
-              <span>Most Unique Pet-Friendly Airbnb in Every State</span>
-            </div>
-          </a>
+          </section>
         </div>
-        <div class="seeMore">
-          <button type="submit">See More Posts</button>
-        </div>
-      </section>
+      </div>
     </main>
     <footer>
       <div class="footer">
