@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .ctr {
@@ -87,9 +87,12 @@ header {
     background-color: #f7f6f6;
     div.search_ctr {
       width: 100%;
+      display: flex;
+
       .input_destination {
+        width: 100%;
         input {
-          width: 90%;
+          width: 100%;
           font-size: 16px;
           margin: 0.5rem 0;
           padding: 0.5rem 0.5rem;
@@ -99,8 +102,9 @@ header {
         }
       }
       button {
+        width: 8%;
         border: none;
-        padding: 0.5rem 0.5rem;
+        margin: 0.5rem;
         background-color: #02b1e8;
         color: white;
         border-radius: 2px;
@@ -128,20 +132,22 @@ header {
 
           .caret-down {
             width: 0.5rem;
-            // margin-right: 1rem;
           }
         }
       }
 
       div.rating {
-        // display: flex;
+        display: flex;
+        margin: 0 1rem;
         .bones {
           display: flex;
+          margin: 0 0.5rem;
           svg {
             fill: white;
             stroke: black;
             stroke-width: 10px;
             transform: rotate(-60deg);
+            width: 20px;
           }
           svg:hover {
             fill: rgb(252, 172, 4);
