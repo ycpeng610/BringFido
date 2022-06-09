@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Poppons:100,200,300,400,500,600,700,800,900");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .ctr {
@@ -81,7 +83,7 @@ header {
   }
 
   div.sub_header {
-    padding-bottom: 1rem;
+    // padding-bottom: 1rem;
     background-color: #f7f6f6;
     div.search_ctr {
       width: 100%;
@@ -107,13 +109,45 @@ header {
       }
     }
     div.search_filter {
-      button {
-        color: #444444;
-      }
+      padding-bottom: 0.5rem;
       color: #444444;
       display: flex;
-      .p2 {
-        margin-right: 2rem;
+      // .p2 {
+      //   margin-right: 2rem;
+      // }
+
+      div.dropdown {
+        button {
+          color: #444444;
+          cursor: pointer;
+
+          svg {
+            margin: auto 5px;
+            fill: #444444;
+          }
+
+          .caret-down {
+            width: 0.5rem;
+            // margin-right: 1rem;
+          }
+        }
+      }
+
+      div.rating {
+        // display: flex;
+        .bones {
+          display: flex;
+          svg {
+            fill: white;
+            stroke: black;
+            stroke-width: 10px;
+            transform: rotate(-60deg);
+          }
+          svg:hover {
+            fill: rgb(252, 172, 4);
+            stroke: orangered;
+          }
+        }
       }
     }
   }
@@ -181,20 +215,18 @@ main {
         border: 1px solid #d4d3d3;
         border-radius: 2px;
         padding: 1rem;
-        h2 {
-          text-align: center;
-          text-transform: uppercase;
-          font-size: 1rem;
-          padding-bottom: 1rem;
-        }
-        nav {
-          ul {
-            li {
-              list-style-type: none;
-              a {
-                text-decoration: none;
-                color: black;
-              }
+        div.quickLink {
+          h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1rem;
+            padding-bottom: 1rem;
+          }
+          div.option {
+            margin: 0 1rem;
+            padding: auto;
+            .icon {
+              margin: 1rem 0;
             }
           }
         }
